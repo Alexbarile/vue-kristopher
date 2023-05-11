@@ -1,0 +1,23 @@
+@mixin flex {
+    display: flex;
+}
+
+@mixin align-center {
+    align-items: center;
+}
+
+@mixin justify-center {
+    justify-content: center;
+}
+
+@mixin justify-between {
+    justify-content: space-between;
+}
+
+@mixin wrap {
+    flex-wrap: wrap;
+}
+
+@mixin upperCase {
+    text-transform: uppercase;
+}

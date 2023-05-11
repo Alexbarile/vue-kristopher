@@ -1,0 +1,39 @@
+<script>
+import axios from 'axios';
+import { store } from './store';
+import Header from './components/Header.vue';
+import Main from './components/Main.vue';
+import Footer from './components/Footer.vue';
+
+export default {
+  components: {
+    Header,
+    Main,
+    Footer
+  },
+  data() {
+    return {
+      store,
+      hello: 'ciao'
+    }
+  },
+}
+</script>
+
+<template>
+  <div>
+    {{ hello }}
+    <Header></Header>
+    <Main></Main>
+    <Footer></Footer>
+  </div>
+  
+</template>
+
+<style lang="scss">
+@use './styles/generals.scss' as *;
+
+// @include flex; mixins
+// color: $darkgray; variables
+
+</style>
