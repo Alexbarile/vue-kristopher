@@ -14,7 +14,7 @@ export default {
   data() {
     return {
       store,
-      hello: 'ciao'
+      // hello: 'ciao'
     }
   },
 }
@@ -22,7 +22,7 @@ export default {
 
 <template>
   <div>
-    {{ hello }}
+    <!-- {{ hello }} -->
     <Header></Header>
     <Main></Main>
     <Footer></Footer>
