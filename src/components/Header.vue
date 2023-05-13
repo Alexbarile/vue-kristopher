@@ -1,5 +1,11 @@
 <script>
+import Dropdown from './Dropdown.vue';
+
 export default {
+    name: 'Header',
+    components: {
+        Dropdown
+    },
     data() {
         return {
             navbar: [
@@ -28,10 +34,19 @@ export default {
                     url: '#',
                     active: false
                 },
+            ],
+            dropdown: [
                 {
-                    label: 'ALTRO',
+                    label: 'CURA DELLE CANDELE',
                     url: '#',
-                    active: false
+                },
+                {
+                    label: 'RIUTILIZZA IL TUO BARATTOLO',
+                    url: '#',
+                },
+                {
+                    label: 'TAPPI DI LEGNO',
+                    url: '#',
                 },
             ]
         }
@@ -66,13 +81,17 @@ export default {
                         </div>
                     </div>
                     <div class="col d-flex align-items-center">
-                        <ul class="d-flex">
-                            <li v-for="(item, index) in navbar" :key="index">
-                                <a :href="item.url" class="item.active ? 'active' : ''">
-                                    {{ item.label }}
-                                </a>
-                            </li>
-                        </ul>
+                        <nav>
+                            <ul class="d-flex">
+                                <li v-for="(item, index) in navbar" :key="index" class="menu-item">
+                                    <a :href="item.url" class="item.active ? 'active' : ''">
+                                        {{ item.label }}
+                                    </a>
+                                </li>
+                                <Dropdown title="ALTRO" :items="dropdown"></Dropdown>
+                                <!-- <Dropdown v-for="(item, index) in dropdown" :key="index" :drop="item"></Dropdown> -->
+                            </ul>
+                        </nav>
                     </div>
 
                     <div class="col">
@@ -100,7 +119,6 @@ header{
     // second part
     .bg-gray{
         background-color: $gray;
-        
 
         .col{
 
@@ -119,13 +137,14 @@ header{
             ul{
                 list-style-type: none;
 
-                li{
+                .menu-item{
                     padding: 15px;
+                    position: relative;
                     
                     a{
                         color: $lightgray;
                         text-decoration: none;
-
+                        
                         &.active, &:hover{
                             color: black;
                             border-top: 4px solid rgb(94,93,40);
