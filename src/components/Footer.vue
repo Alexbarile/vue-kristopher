@@ -54,7 +54,9 @@ export default {
                 </div>
                 <div class="row">
                     <div class="col text-center">
-                        ciao
+                        <p v-for="(item, index) in contact" :key="index">
+                            {{ item.label }}
+                        </p>
                     </div>
                     <div class="col text-center">
                         ciao
