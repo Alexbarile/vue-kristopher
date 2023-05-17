@@ -20,7 +20,7 @@ export default {
                     active: false
                 },
                 {
-                    label: 'STORIA',
+                    label: 'NOSTRASTORIA',
                     url: '#',
                     active: false
                 },

@@ -43,33 +43,90 @@ export default {
 
 <template>
     <footer>
-        <div class="container-f">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
+        <div class="bg-footer">
+            <div class="container-f">
+
+                <!-- LOGO -->
+
+                <div class="row d-flex justify-content-center p-3">
                     <div class="col">
                         <div class="logo text-center">
                             <img src="../../public/img/KW-Milano-white.png" alt="logo KW">
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col text-center">
-                        <p v-for="(item, index) in contact" :key="index">
-                            {{ item.label }}
-                        </p>
+                <div class="row text-white p-5">
+
+                    <!-- CONTATTI -->
+
+                    <div v-for="(item, index) in contact" :key="index" class="col">
+                        <div>
+                            <h5>
+                                {{ item.label }}
+                            </h5>
+                        </div>
+                        <div class="mt-4">
+                            <p>Indirizzo: {{ item.address }}</p>
+                            <p>Telefono: {{ item.phone }}</p>
+                            <p>Email: <a href="mailto:kristopherwander@gmail.com">{{ item.mail }}</a></p>
+                        </div>
                     </div>
-                    <div class="col text-center">
-                        ciao
+
+                    <!-- SHOP -->
+
+                    <div v-for="(item, index) in shop" :key="index" class="col">
+                        <div>
+                            <h5>
+                                {{ item.label }}
+                            </h5>
+                        </div>
+                        <div class="mt-4">
+                            <p><a :href="item.candles">Candele</a></p>
+                            <p><a :href="item.personalize">Personalizza</a></p>
+                            <p><a :href="item.treatment">Cura</a></p>
+                        </div>
                     </div>
-                    <div class="col text-center">
-                        ciao
+
+                    <!-- CONNECTIONS -->
+
+                    <div v-for="(item, index) in connections" :key="index" class="col">
+                        <div>
+                            <h5>
+                                {{ item.label }}
+                            </h5>
+                        </div>
+                        <div class="mt-4">
+                            <p><a :href="item.faq">FAQ</a></p>
+                            <p><a :href="item.shipping">Spedizione e resi</a></p>
+                            <p><a :href="item.terms">Termini & Condizioni</a></p>
+                            <p><a :href="item.payment">Modalit&#224; di pagamento</a></p>
+                        </div>
                     </div>
-                    <div class="col text-center">
-                        ciao
+
+                    <!-- BIO -->
+
+                    <div v-for="(item, index) in bio" :key="index" class="col">
+                        <div>
+                            <h5>
+                                {{ item.label }}
+                            </h5>
+                        </div>
+                        <div class="mt-4">
+                            <p><a :href="item.story">La nostra storia</a></p>
+                            <p><a :href="item.contact">Contattaci</a></p>
+                        </div>
                     </div>
-                    
-                    
                 </div>
+
+                <!-- SOCIAL MEDIA -->
+
+                <div class="row">
+                    <div class="col">
+                        ciao
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
@@ -89,6 +146,11 @@ export default {
             img{
                 width: 150px;
             }
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
         }
     }
 
