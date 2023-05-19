@@ -61,7 +61,7 @@ export default {
 
             <!-- FIRST PART -->
 
-            <div class="bg-lightgreen">
+            <div class="bg-lightgreen font-questrial">
                <div class="row">
                     <div class="col d-flex justify-content-center p-3">
                         <div>
@@ -80,13 +80,13 @@ export default {
 
                     <div class="col">
                         <div class="logo">
-                            <img src="../../public/img/KW-Milano-white.png" alt="logo KW">
+                            <img src="../../public/img/KristopherWander3.png" alt="logo KW">
                         </div>
                     </div>
 
                     <!-- NAVBAR -->
 
-                    <div class="col d-flex align-items-center">
+                    <div class="col d-flex align-items-center font-marcellus">
                         <nav>
                             <ul class="d-flex">
                                 <li v-for="(item, index) in navbar" :key="index" class="menu-item">
@@ -102,7 +102,7 @@ export default {
 
                     <!-- LOGIN -->
 
-                    <div class="col d-flex justify-content-center align-items-center">
+                    <div class="col d-flex justify-content-center align-items-center font-questrial">
 
                         <!-- shop -->
 
@@ -174,7 +174,8 @@ header{
             // LOGO
             .logo{
                 width: 100%;
-                padding: 10px;
+                width: 100%;
+                padding: 10px 0 5px 35px;
 
                 img{
                     width: 150px;

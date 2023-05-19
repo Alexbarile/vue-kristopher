@@ -30,11 +30,32 @@ export default {
             ],
             bio: [
                 {
-                    label: 'KRISTOPHER WANDER CO',
                     story: '#',
                     contact: '#',
                 }
             ],
+            social: [
+                {
+                    icon: 'fab fa-instagram',
+                    url: 'https://www.instagram.com/kristopherwander/',
+                },
+                {
+                    icon: 'fab fa-facebook-f',
+                    url: 'https://www.facebook.com/kristopherwander',
+                },
+                {
+                    icon: 'fab fa-tiktok',
+                    url: 'https://www.tiktok.com/@kristopherwander?lang=en',
+                },
+                {
+                    icon: 'fab fa-pinterest',
+                    url: 'https://www.pinterest.it/kristopherwander/?invite_code=5989647a448240d48911db83ef30b967&sender=373024919044375459',
+                },
+                {
+                    icon: 'fab fa-etsy',
+                    url: 'https://www.etsy.com/shop/KristopherWander?ref=profile_header',
+                },
+            ]
         }
     },
     
@@ -44,14 +65,14 @@ export default {
 <template>
     <footer>
         <div class="bg-footer">
-            <div class="container-f">
+            <div class="container-f font-questrial">
 
                 <!-- LOGO -->
 
-                <div class="row d-flex justify-content-center p-3">
+                <div class="row d-flex justify-content-center pt-5 pb-3">
                     <div class="col">
                         <div class="logo text-center">
-                            <img src="../../public/img/KW-Milano-white.png" alt="logo KW">
+                            <img src="../../public/img/KW-Milano.png" alt="logo KW">
                         </div>
                     </div>
                 </div>
@@ -107,9 +128,9 @@ export default {
 
                     <div v-for="(item, index) in bio" :key="index" class="col">
                         <div>
-                            <h5>
-                                {{ item.label }}
-                            </h5>
+                            <h6 class="font-marcellus">
+                                KRISTOPHER WANDER CO
+                            </h6>
                         </div>
                         <div class="mt-4">
                             <p><a :href="item.story">La nostra storia</a></p>
@@ -120,9 +141,14 @@ export default {
 
                 <!-- SOCIAL MEDIA -->
 
-                <div class="row">
-                    <div class="col">
-                        ciao
+                <div class="row d-flex flex-column">
+                    <div class="col d-flex justify-content-center">
+                        <ul v-for="(item, index) in social" :key="index">
+                            <li><a :href="item.url" target="_blank" rel="noopener noreferrer"><i :class="item.icon" class="text-dark"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col d-flex justify-content-center text-white">
+                        <p>@2023 by Kristopher Wander Co. All Rights Reserved.</p>
                     </div>
                 </div>
 
@@ -148,9 +174,22 @@ export default {
             }
         }
 
+        ul{
+            list-style: none;
+
+            li{
+                padding: 15px;
+                font-size: 25px;
+            }
+        }
+
         a{
             text-decoration: none;
             color: white;
+        }
+
+        h6{
+            font-size: 15px;
         }
     }
 
