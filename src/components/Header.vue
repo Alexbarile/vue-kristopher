@@ -178,7 +178,7 @@ header{
                 padding: 10px 0 5px 35px;
 
                 img{
-                    width: 150px;
+                    width: 130px;
                 }
             }
 
