@@ -20,7 +20,7 @@ export default {
                     active: false
                 },
                 {
-                    label: 'NOSTRASTORIA',
+                    label: 'NOSTRA STORIA',
                     url: '#',
                     active: false
                 },
@@ -110,7 +110,8 @@ export default {
 
                         <div class="p-2">
                             <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                <i class="fa-solid fa-cart-shopping" style="color: #ffffff; font-size: 30px;"></i>
+                                <i class="fa-solid fa-cart-shopping" style="font-size: 30px;"></i>
+                                
                             </a>
                             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                                 <div class="offcanvas-header d-flex justify-content-between bg-brown py-4">
@@ -205,7 +206,7 @@ header{
                         &.active, &:hover{
                             color: black;
                             border-top: 4px solid rgb(94,93,40);
-                            padding-top: 20px;
+                            padding-top: 15px;
                         }
                     }
                 }
@@ -215,6 +216,14 @@ header{
 
             // shop
 
+            .fa-cart-shopping{
+                color: white;
+                transition: 400ms;
+
+                &:hover{
+                    color: rgb(168, 168, 168);
+                }
+            }
             .bg-brown{
                 background-color: $brown;
             }

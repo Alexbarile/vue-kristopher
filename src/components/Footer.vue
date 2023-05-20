@@ -138,9 +138,9 @@ export default {
                 <!-- SOCIAL MEDIA -->
 
                 <div class="row d-flex flex-column">
-                    <div class="col d-flex justify-content-center">
+                    <div class="col d-flex justify-content-center pb-3">
                         <ul v-for="(item, index) in social" :key="index">
-                            <li><a :href="item.url" target="_blank" rel="noopener noreferrer"><i :class="item.icon" class="text-dark"></i></a></li>
+                            <li><a :href="item.url" target="_blank" rel="noopener noreferrer"><i :class="item.icon" class="text-black"></i></a></li>
                         </ul>
                         <ul>
                             <li><a href="https://www.etsy.com/shop/KristopherWander?ref=profile_header" target="_blank" rel="noopener noreferrer"><img src="../../public/img/etsy.png" alt="" style="width: 35px;"></a></li>
@@ -150,8 +150,6 @@ export default {
                         <p>@2023 by Kristopher Wander Co. All Rights Reserved.</p>
                     </div>
                 </div>
-
-
             </div>
         </div>
 

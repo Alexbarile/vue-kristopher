@@ -57,7 +57,7 @@ export default {
                 &.active, &:hover{
                     color: black;
                     border-top: 4px solid rgb(94,93,40);
-                    padding-top: 10px;
+                    padding-top: 15px;
                 }
             }
         }
