@@ -51,10 +51,6 @@ export default {
                     icon: 'fab fa-pinterest',
                     url: 'https://www.pinterest.it/kristopherwander/?invite_code=5989647a448240d48911db83ef30b967&sender=373024919044375459',
                 },
-                {
-                    icon: 'fab fa-etsy',
-                    url: 'https://www.etsy.com/shop/KristopherWander?ref=profile_header',
-                },
             ]
         }
     },
@@ -145,6 +141,9 @@ export default {
                     <div class="col d-flex justify-content-center">
                         <ul v-for="(item, index) in social" :key="index">
                             <li><a :href="item.url" target="_blank" rel="noopener noreferrer"><i :class="item.icon" class="text-dark"></i></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="https://www.etsy.com/shop/KristopherWander?ref=profile_header" target="_blank" rel="noopener noreferrer"><img src="../../public/img/etsy.png" alt="" style="width: 35px;"></a></li>
                         </ul>
                     </div>
                     <div class="col d-flex justify-content-center text-white">

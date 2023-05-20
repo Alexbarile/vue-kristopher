@@ -80,7 +80,9 @@ export default {
 
                     <div class="col">
                         <div class="logo">
-                            <img src="../../public/img/KristopherWander3.png" alt="logo KW">
+                            <a href="#">
+                                <img src="../../public/img/KristopherWander3.png" alt="logo KW">
+                            </a>
                         </div>
                     </div>
 
@@ -111,13 +113,18 @@ export default {
                                 <i class="fa-solid fa-cart-shopping" style="color: #ffffff; font-size: 30px;"></i>
                             </a>
                             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
+                                <div class="offcanvas-header d-flex justify-content-between bg-brown py-4">
+                                    <div class="text-white">
+                                        <h5 class="offcanvas-title font-marcellus" id="offcanvasExampleLabel">Carrello</h5>
+                                    </div>
                                     <div>
-                                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                                        <!-- <button class="btn btn-primary" data-bs-dismiss="offcanvas" aria-label="Close">ciao</button> -->
+                                        <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-regular fa-x"></i></button>
+                                    </div>
+                                </div>
+                                <div class="offcanvas-body bg-acqua">
+                                    <div class="text-center">
+                                        Il carrello è vuoto
                                     </div>
                                     
                                 </div>
@@ -205,6 +212,20 @@ header{
             }
 
             // LOGIN
+
+            // shop
+
+            .bg-brown{
+                background-color: $brown;
+            }
+
+            .bg-acqua{
+                background-color: $acqua;
+
+                div{
+                    color: $gray;
+                }
+            }
 
             // accedi
 
