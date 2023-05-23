@@ -76,61 +76,69 @@ export default {
 
                     <!-- CONTATTI -->
 
-                    <div v-for="(item, index) in contact" :key="index" class="col">
+                    <div v-for="(item, index) in contact" :key="index" class="col d-flex justify-content-center">
                         <div>
-                            <h5>
-                                {{ item.label }}
-                            </h5>
-                        </div>
-                        <div class="mt-4">
-                            <p>Indirizzo: {{ item.address }}</p>
-                            <p>Telefono: {{ item.phone }}</p>
-                            <p>Email: <a href="mailto:kristopherwander@gmail.com">{{ item.mail }}</a></p>
+                            <div>
+                                <h5>
+                                    {{ item.label }}
+                                </h5>
+                            </div>
+                            <div class="mt-4">
+                                <p>Indirizzo: {{ item.address }}</p>
+                                <p>Telefono: {{ item.phone }}</p>
+                                <p>Email: <a href="mailto:kristopherwander@gmail.com">{{ item.mail }}</a></p>
+                            </div>
                         </div>
                     </div>
 
                     <!-- SHOP -->
 
-                    <div v-for="(item, index) in shop" :key="index" class="col">
+                    <div v-for="(item, index) in shop" :key="index" class="col d-flex justify-content-center">
                         <div>
-                            <h5>
-                                {{ item.label }}
-                            </h5>
-                        </div>
-                        <div class="mt-4">
-                            <p><a :href="item.candles">Candele</a></p>
-                            <p><a :href="item.personalize">Personalizza</a></p>
-                            <p><a :href="item.treatment">Cura</a></p>
+                            <div>
+                                <h5>
+                                    {{ item.label }}
+                                </h5>
+                            </div>
+                            <div class="mt-4">
+                                <p><a :href="item.candles">Candele</a></p>
+                                <p><a :href="item.personalize">Personalizza</a></p>
+                                <p><a :href="item.treatment">Cura</a></p>
+                            </div>
                         </div>
                     </div>
 
                     <!-- CONNECTIONS -->
 
-                    <div v-for="(item, index) in connections" :key="index" class="col">
+                    <div v-for="(item, index) in connections" :key="index" class="col d-flex justify-content-center">
                         <div>
-                            <h5>
-                                {{ item.label }}
-                            </h5>
-                        </div>
-                        <div class="mt-4">
-                            <p><a :href="item.faq">FAQ</a></p>
-                            <p><a :href="item.shipping">Spedizione e resi</a></p>
-                            <p><a :href="item.terms">Termini & Condizioni</a></p>
-                            <p><a :href="item.payment">Modalit&#224; di pagamento</a></p>
+                            <div>
+                                <h5>
+                                    {{ item.label }}
+                                </h5>
+                            </div>
+                            <div class="mt-4">
+                                <p><a :href="item.faq">FAQ</a></p>
+                                <p><a :href="item.shipping">Spedizione e resi</a></p>
+                                <p><a :href="item.terms">Termini & Condizioni</a></p>
+                                <p><a :href="item.payment">Modalit&#224; di pagamento</a></p>
+                            </div>
                         </div>
                     </div>
 
                     <!-- BIO -->
 
-                    <div v-for="(item, index) in bio" :key="index" class="col">
+                    <div v-for="(item, index) in bio" :key="index" class="col d-flex justify-content-center">
                         <div>
-                            <h6 class="font-marcellus">
-                                KRISTOPHER WANDER CO
-                            </h6>
-                        </div>
-                        <div class="mt-4">
-                            <p><a :href="item.story">La nostra storia</a></p>
-                            <p><a :href="item.contact">Contattaci</a></p>
+                            <div>
+                                <h6 class="font-marcellus">
+                                    KRISTOPHER WANDER CO
+                                </h6>
+                            </div>
+                            <div class="mt-4">
+                                <p><a :href="item.story">La nostra storia</a></p>
+                                <p><a :href="item.contact">Contattaci</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
