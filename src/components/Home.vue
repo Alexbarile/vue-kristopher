@@ -1,29 +1,25 @@
 <script>
-import Home from '../components/Home.vue';
-
+import CardShop from './CardShop.vue';
 export default {
-    name: 'Main',
+    name: 'Home',
     components: {
-    Home,
-  },
-  data() {
-    return {
-      
-    }
-  },
-    
+        CardShop,
+    },
 }
 </script>
 
 <template>
-    <div>
-        <Home></Home>
-    </div>
+  <div>
+    ciao
+  </div>
+  
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/generals.scss' as *;
 @use '../styles/partials/mixins' as *;
 @use '../styles/partials/variables' as *;
+
+
 
 </style>
