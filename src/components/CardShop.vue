@@ -1,12 +1,15 @@
 <script>
 export default {
     name: 'CardShop',
+    props: {
+      shop: Object,
+    }
 }
 </script>
 
 <template>
   <div>
-    
+    ciao
   </div>
   
 </template>

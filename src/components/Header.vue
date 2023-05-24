@@ -11,7 +11,7 @@ export default {
             navbar: [
                 {
                     label: 'HOME',
-                    url: '#',
+                    routName: 'Home',
                     active: false
                 },
                 {
@@ -80,9 +80,9 @@ export default {
 
                     <div class="col">
                         <div class="logo">
-                            <a href="#">
+                            <router-link :to="{name: 'Home'}">
                                 <img src="../../public/img/KristopherWander3.png" alt="logo KW">
-                            </a>
+                            </router-link>
                         </div>
                     </div>
 
