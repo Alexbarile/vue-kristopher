@@ -198,6 +198,7 @@ header{
                 .menu-item{
                     padding: 15px;
                     position: relative;
+                    white-space: nowrap;
                     
                     a{
                         color: $lightgray;
