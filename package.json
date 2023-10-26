@@ -13,9 +13,11 @@
     "animate.css": "^4.1.1",
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
+    "slick-carousel": "^1.8.1",
     "vue": "^3.2.47",
     "vue-router": "^4.2.1",
-    "vue-slick-carousel": "^1.0.6"
+    "vue-slick-carousel": "^1.0.6",
+    "vue2-transitions": "^0.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",

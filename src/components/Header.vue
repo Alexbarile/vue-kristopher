@@ -57,6 +57,14 @@ export default {
 
 <template>
     <header>
+
+        <!-- PREINTRO -->
+
+        <div class="preIntro">
+            <div class="preHero">
+                <img src="../../public/img/preintro.jpeg" alt="">
+            </div>
+        </div>
         <div class="container-h">
 
             <!-- FIRST PART -->
@@ -167,6 +175,14 @@ export default {
 @use '../styles/partials/variables' as *;
 
 header{
+
+    // PREINTRO
+
+    .preHero img{
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+    }
 
     // FIRST PART
     .bg-lightgreen{

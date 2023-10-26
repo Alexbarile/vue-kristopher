@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;700&display=swap');
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import '../../src/styles/vue-slick-carousel.css';
 
 // generals
 
@@ -40,6 +41,11 @@
 
 // MAIN
 
+.container-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
 
 
 
@@ -49,7 +55,6 @@
 .bg-footer {
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(122, 113, 105);
 }
 
 .container-f {
